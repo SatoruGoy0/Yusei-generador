@@ -12,15 +12,14 @@ pip3 install resquest
 
 pip3 install tqdm
 
-𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬 𝐩𝐚𝐫𝐚 𝐭𝐞𝐫𝐦𝐮𝐱:
+𝐂𝐨𝐦𝐚𝐧𝐝𝐨𝐬
+https://github.com/SatoruGoy0/Yusei-generador
 
-git clone https://github.com/Samael93t/Samiptv
-
-cd Samiptv
+cd Yusei-generador
 
 ls
 
 python3 crearcombo.py
 
 
-𝔹𝕪 𝕊𝕒𝕞𝕒𝕖𝕝
+𝔹𝕪 Yusei
