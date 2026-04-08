@@ -1,0 +1,2 @@
+# Yusei-generador
+User:Pass
