@@ -1,174 +1,130 @@
 import random
 import time
 import names
+import sys
 
-#os.system('clear')
 time.sleep(0.1)
-print("\u001B[93m" + """\u001B[93m⣿⣿⠿⠿⠿⠿⣿⣷⣂⠄⠄⠄⠄⠄⠄⠈⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⣷⡾⠯⠉⠉⠉⠉⠚⠑⠄⡀⠄⠄⠄⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠉⠻⣿⣿⣿⣿⣿⣿⣿
-⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⠎⠄⠄⣀⡀⠄⠄⠄⠄⠄⠄⠄⠘⠋⠉⠉⠉⠉⠭
-⡀⠄⠄⠄⠄⠄⠄⠄⠄⡇⠄⣠⣾⣳⠁⠄⠄⢺⡆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄
-⣿⣷⡦⠄⠄⠄⠄⠄⢠⠃⢰⣿⣯⣿⡁⢔⡒⣶⣯⡄⢀⢄⡄⠄⠄⠄⠄⠄⣀
-⠓⠄⠄⠄⠄⠄⠸⠄⢀⣤⢘⣿⣿⣷⣷⣿⠛⣾⣿⣿⣆⠾⣷⠄⠄⠄⠄⢀⣀
-⠄⠄⠄⠄⠄⠄⠄⠑⢘⣿⢰⡟⣿⣿⣷⣫⣭⣿⣾⣿⣿⣴⠏⠄⠄⢀⣺⣿⣿
-⣿⣿⣿⣿⣷⠶⠄⠄⠄⠹⣮⣹⡘⠛⠿⣫⣾⣿⣿⣿⡇⠑⢤⣶⣿⣿⣿⣿⣿
-⣿⣿⣿⣯⣤⣤⣤⣤⣀⣀⡹⣿⣿⣷⣯⣽⣿⣿⡿⣋⣴⡀⠈⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣝⡻⢿⣿⡿⠋⡒⣾⣿⣧⢰⢿⣿⣿⣿⣿⣿
-\u001B[0m""")
-print("""\u001B[95m 𓃭ꉔꋪꏂꋬ꒯ꄲꋪ ꒯ꏂ ꉔꄲꂵꃳꄲꇙ & ꂵ3꒤ ꏂꇙꉔꋬꋊꏂꋪ𓃸 𓁹𓁹Yusei𓁹𓁹 \u001B[0m""")
+print("\u001B[93m⣿⣿⠿⠿⠿⠿⣿⣷⣂⠄⠄⠄⠄⠄⠄⠈⢷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\u001B[0m")
+print("\u001B[93m⣷⡾⠯⠉⠉⠉⠉⠚⠑⠄⡀⠄⠄⠄⠄⠄⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\u001B[0m")
+print("\u001B[93m⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⡀⠄⠄⠄⠄⠄⠄⠄⠄⠉⠻⣿⣿⣿⣿⣿⣿⣿\u001B[0m")
+print("\u001B[93m⠄⠄⠄⠄⠄⠄⠄⠄⠄⢀⠎⠄⠄⣀⡀⠄⠄⠄⠄⠄⠄⠄⠘⠋⠉⠉⠉⠉⠭\u001B[0m")
+print("\u001B[93m⡀⠄⠄⠄⠄⠄⠄⠄⠄⡇⠄⣠⣾⣳⠁⠄⠄⢺⡆⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\u001B[0m")
+print("\u001B[93m⣿⣷⡦⠄⠄⠄⠄⠄⢠⠃⢰⣿⣯⣿⡁⢔⡒⣶⣯⡄⢀⢄⡄⠄⠄⠄⠄⠄⣀\u001B[0m")
+print("\u001B[93m⠓⠄⠄⠄⠄⠄⠸⠄⢀⣤⢘⣿⣿⣷⣷⣿⠛⣾⣿⣿⣆⠾⣷⠄⠄⠄⠄⢀⣀\u001B[0m")
+print("\u001B[93m⠄⠄⠄⠄⠄⠄⠄⠑⢘⣿⢰⡟⣿⣿⣷⣫⣭⣿⣾⣿⣿⣴⠏⠄⠄⢀⣺⣿⣿\u001B[0m")
+print("\u001B[93m⣿⣿⣿⣿⣷⠶⠄⠄⠄⠹⣮⣹⡘⠛⠿⣫⣾⣿⣿⣿⡇⠑⢤⣶⣿⣿⣿⣿⣿\u001B[0m")
+print("\u001B[93m⣿⣿⣿⣯⣤⣤⣤⣤⣀⣀⡹⣿⣿⣷⣯⣽⣿⣿⡿⣋⣴⡀⠈⣿⣿⣿⣿⣿⣿\u001B[0m")
+print("\u001B[93m⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣝⡻⢿⣿⡿⠋⡒⣾⣿⣧⢰⢿⣿⣿⣿⣿⣿\u001B[0m")
+
+print("\u001B[95m 𓃭ꉔꋪꏂꋬ꒯ꄲꋪ ꒯ꏂ ꉔꄲꂵꃳꄲꇙ & ꂵ3꒤ ꏂꇙꉔꋬꋊꏂꋪ𓃸 𓁹𓁹Yusei𓁹𓁹 \u001B[0m")
 time.sleep(0.1)
-print(""" 🄲🄾🄼🄱🄾 🄾🄿🅃🄸🄾🄽🅂: \u001B[0m
+print(""" \u001B[96m🄲🄾🄼🄱🄾 🄾🄿🅃🄸🄾🄽🅂:\u001B[0m
 \u001B[96m
 1) NOMBRE: NOMBRE (Mix)
 2) Nombres (Mayusculas, Minusculas)
 3) GENERADOR DE CORREOS FALSOS
-0) PARA SALIR A SCANEAR
+0) VEGETA ASCII + SALIR
 \u001B[0m""")
-menu = input("Enter Option :")
+menu = input("\u001B[93mEnter Option: \u001B[0m")
 
-# LOGO DE VEGETA (ASCII) - solo si eliges 0
+# LOGO VEGETA - Opción 0
 if menu == "0":
     print("
-\u001B[91m      VEGETA ASCII MINI LOGO\u001B[0m
-")
-    print(
-        r"""   /    /  
-  /    /   
+\u001B[91m      VEGETA ASCII MINI LOGO\u001B[0m")
+    print("""
+   /\\    /\\  
+  /  \\  /  \\ 
  |    ||    |
  |    ||    |
  |(o)(o)|   |
-  _  _/   ,
-   /    _/
+  \\_  _/   ,
+   \\/    _/
         /
-       /"""
-    )
-    exit()
+       /
+    """)
+    print("\u001B[92m¡Listo para escanear! 👊\u001B[0m")
+    sys.exit()
 
+# 1) COMBO NOMBRES:USUARIO
 if menu == "1":
-    print("\t\t\u001B[1;33m (.txt) escriba \u001B[36m ")
-    filename = input("
-Nombre su Combo  :  ")
-    hwm = int(input("cuantas lineas? : "))
-    for i in range(0, hwm):
+    print("\u001B[36m(.txt) \u001B[33mNombre su Combo:\u001B[0m ", end="")
+    filename = input()
+    hwm = int(input("\u001B[33mCuantas lineas?\u001B[0m "))
+    F = f"/sdcard/combo/{filename}.txt"
+    
+    for i in range(hwm):
         rname = names.get_first_name()
         rlastname = names.get_last_name()
-        num = random.randint(1, 100000)
-
-        all1   = f"{rname}{num}"
-        alln   = f"{all1}:{rname}{num}"
-        all2   = f"{rlastname}{num}"
-        allf   = f"{all2}:{rlastname}{num}"
-        all3   = f"{rname}2022"
-        alls   = f"{all3}:{rname}2022"
-        all4   = f"{rlastname}2022"
-        allg   = f"{all4}:{rlastname}2022"
-        all5   = f"{rname}2023"
-        alle   = f"{all5}:{rname}2023"
-        all6   = f"{rlastname}2023"
-        alld   = f"{all6}:{rlastname}2023"
-        all7   = rname
-        allt   = f"{all7}:{rname}"
-        all8   = rlastname
-        ally   = f"{all8}:{rlastname}"
-        all9   = f"{rname}123"
-        allp   = f"{all9}:{rname}123"
-        all10  = f"{rlastname}123"
-        allj   = f"{all10}:{rlastname}123"
-        all11  = str(num)
-        allv   = f"{all11}:{num}"
-
-        F = f"/sdcard/combo/{filename}.txt"
-        with open(F, "a+", encoding="utf-8") as f:
-            f.write(f"{alln}
+        num = random.randint(1, 99999)
+        
+        combos = [
+            f"{rname}{num}:{rname}{num}",
+            f"{rlastname}{num}:{rlastname}{num}",
+            f"{rname}2022:{rname}2022",
+            f"{rlastname}2022:{rlastname}2022",
+            f"{rname}:{rname}",
+            f"{rlastname}:{rlastname}",
+            f"{num}:{num}"
+        ]
+        
+        with open(F, "a", encoding="utf-8") as f:
+            for combo in combos:
+                f.write(f"{combo.lower()}
 ")
-            f.write(f"{allf}
+                f.write(f"{combo.upper()}
 ")
-            f.write(f"{alln.lower()}
+                f.write(combo + "
 ")
-            f.write(f"{allf.lower()}
-")
-            f.write(f"{alls.upper()}
-")
-            f.write(f"{allg.upper()}
-")
-            f.write(f"{alle.lower()}
-")
-            f.write(f"{alld.lower()}
-")
-            f.write(f"{allt.lower()}
-")
-            f.write(f"{ally.lower()}
-")
-            f.write(f"{allt}
-")
-            f.write(f"{ally}
-")
-            f.write(f"{allp.lower()}
-")
-            f.write(f"{allj.lower()}
-")
-            f.write(f"{allp.upper()}
-")
-            f.write(f"{allj.upper()}
-")
-            f.write(f"{allv}
+                f.write("
 ")
 
+# 2) SOLO NOMBRES
 if menu == "2":
-    print("\t\t\u001B[1;33m (.txt) escriba \u001B[36m ")
-    filename = input("
-Nombre su Combo  : ")
-    hwm = int(input("numero de lineas (x2): "))
-    for i in range(0, hwm):
+    print("\u001B[36m(.txt) \u001B[33mNombre su Combo:\u001B[0m ", end="")
+    filename = input()
+    hwm = int(input("\u001B[33mNumero de lineas (x3):\u001B[0m "))
+    F = f"/sdcard/combo/{filename}.txt"
+    
+    for i in range(hwm):
         rname = names.get_first_name()
-        rlastname = names.get_last_name()
-        alln = rname
-        alle = rname.upper()
-
-        F = f"/sdcard/combo/{filename}.txt"
-        with open(F, "a+", encoding="utf-8") as f:
-            f.write(f"{alln}
+        with open(F, "a", encoding="utf-8") as f:
+            f.write(f"{rname}
 ")
-            f.write(f"{alln.lower()}
+            f.write(f"{rname.lower()}
 ")
-            f.write(f"{alle}
+            f.write(f"{rname.upper()}
 ")
 
+# 3) CORREOS FALSOS
 if menu == "3":
-    print("\t\t\u001B[1;33m GENERADOR DE CORREOS FALSOS \u001B[36m (.txt)\u001B[0m")
-    filename = input("
-Nombre su archivo de correos : ")
-    hwm = int(input("Cuantos correos quieres generar? : "))
-    dominios = [
-        "gmail.com",
-        "yahoo.com",
-        "hotmail.com",
-        "outlook.com",
-        "test.local",
-        "example.com"
-    ]
-    print("Dominios disponibles: ", ", ".join(dominios))
-    dominio = input("Escribe dominio (o presiona Enter para uno aleatorio): ").strip()
+    print("\u001B[36mGENERADOR DE CORREOS FALSOS \u001B[33m(.txt)\u001B[0m")
+    filename = input("\u001B[33mNombre del archivo:\u001B[0m ")
+    hwm = int(input("\u001B[33mCuantos correos:\u001B[0m "))
+    
+    dominios = ["gmail.com", "yahoo.com", "hotmail.com", "outlook.com", "example.com"]
+    print("Dominios: ", ", ".join(dominios))
+    dominio = input("\u001B[33mDominio (Enter=aleatorio):\u001B[0m ").strip()
     if not dominio:
         dominio = random.choice(dominios)
-
+    
     F = f"/sdcard/combo/{filename}.txt"
-    with open(F, "a+", encoding="utf-8") as f:
+    with open(F, "w", encoding="utf-8") as f:
         for _ in range(hwm):
             rname = names.get_first_name().lower()
             rlastname = names.get_last_name().lower()
+            num = random.randint(1, 9999)
+            
             patrones = [
-                f"{rname}{rlastname}{random.randint(1,999)}",
-                f"{rname}.{rlastname}{random.randint(1,999)}",
-                f"{rname}{random.randint(10,99)}",
-                f"{rname[0]}{rlastname}{random.randint(1,9999)}",
-                f"{rname}{rlastname}",
+                f"{rname}{rlastname}{num}",
+                f"{rname}.{rlastname}{num}",
+                f"{rname}{num}",
+                f"{rname[0]}{rlastname}{num}"
             ]
-            user = random.choice(patrones)
-            correo = f"{user}@{dominio}"
-            print(correo)
-            f.write(f"{correo}
+            email = f"{random.choice(patrones)}@{dominio}"
+            print(f"\u001B[92m{email}\u001B[0m")
+            f.write(email + "
 ")
+    
+    print(f"\u001B[92m¡{hwm} correos guardados en /sdcard/combo/{filename}.txt!\u001B[0m")
 
-print("\u001B[1;37;33m")
+print("\u001B[93m¡Listo! 🎉\u001B[0m")
